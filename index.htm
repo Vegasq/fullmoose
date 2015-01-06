@@ -97,7 +97,7 @@
                     var posts = data.split('---')
                     for (var i = posts.length - 1; i >= 0; i--) {
                         var lines = posts[i].split('\n');
-                        if (lines[0].length == 0){
+                        if (lines[1].length == 0){
                             continue;
                         }
                         $scope.posts.push({
